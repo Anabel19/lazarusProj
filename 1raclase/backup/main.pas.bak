@@ -1,0 +1,45 @@
+unit main;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  class_sum;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    btnExecute: TButton;
+    EdiN: TEdit;
+    lblResult: TLabel;
+    procedure btnExecuteClick(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.btnExecuteClick(Sender: TObject);
+var MySum: TsumaN;
+begin
+  MySum:=TsumaN.Create();
+  MySum.n:=StrToInt(ediN.Text);
+  lblResult.Caption:=IntToStr(MySum.sum());
+  MySum.Destroy;
+end;
+
+end.
+

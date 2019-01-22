@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="Mc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="64" Y="15"/>
+        <UsageCount Value="63"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="42"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="class_mc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="105"/>
+        <CursorPos X="13" Y="78"/>
+        <UsageCount Value="63"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="main.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="89"/>
+        <CursorPos X="5" Y="107"/>
+        <UsageCount Value="54"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\main.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="23" Y="10"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\ProjectP\main_mc.lfm"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="22" Y="12"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="Mc.pas"/>
+        <Caret Line="4" Column="110"/>
+      </Position1>
+      <Position2>
+        <Filename Value="class_mc.pas"/>
+        <Caret Line="76" Column="42" TopLine="68"/>
+      </Position2>
+      <Position3>
+        <Filename Value="class_mc.pas"/>
+        <Caret Line="109" Column="45" TopLine="108"/>
+      </Position3>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

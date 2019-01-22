@@ -1,0 +1,141 @@
+object Form1: TForm1
+  Left = 320
+  Height = 623
+  Top = 245
+  Width = 1056
+  Caption = 'Form1'
+  ClientHeight = 623
+  ClientWidth = 1056
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.6.4.0'
+  object PanelRight: TPanel
+    Left = 0
+    Height = 623
+    Top = 0
+    Width = 689
+    Align = alClient
+    ClientHeight = 623
+    ClientWidth = 689
+    TabOrder = 0
+    object CmdBox: TCmdBox
+      Left = 1
+      Height = 332
+      Top = 290
+      Width = 687
+      Align = alClient
+      CaretColor = clBlue
+      CaretType = cartUser
+      CaretWidth = 1
+      CaretHeight = 12
+      CaretYShift = 3
+      OnInput = CmdBoxInput
+      LineCount = 1000
+      Font.Color = clBlack
+      Font.Height = -15
+      BackGroundColor = clWhite
+      TabWidth = 60
+      HistoryMax = 10
+      InputSelColor = clBlue
+      InputSelBackGround = clWhite
+      CaretInterval = 500
+      EscapeCodeType = esctCmdBox
+      GraphicalCharacterWidth = 10
+    end
+    object PanelG: TPanel
+      Left = 1
+      Height = 282
+      Top = 1
+      Width = 687
+      Align = alTop
+      TabOrder = 1
+    end
+    object Splitter2: TSplitter
+      Cursor = crVSplit
+      Left = 1
+      Height = 7
+      Top = 283
+      Width = 687
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 697
+    Height = 623
+    Top = 0
+    Width = 359
+    ActivePage = TScom
+    Align = alRight
+    TabIndex = 1
+    TabOrder = 1
+    object TSvar: TTabSheet
+      Caption = 'variable'
+      ClientHeight = 595
+      ClientWidth = 351
+      object ValueListEditor1: TValueListEditor
+        Left = 0
+        Height = 165
+        Top = 0
+        Width = 351
+        Align = alTop
+        FixedCols = 0
+        RowCount = 2
+        TabOrder = 0
+        Strings.Strings = (
+          ''
+        )
+        ColWidths = (
+          64
+          266
+        )
+      end
+      object tvwHistory: TTreeView
+        Left = 0
+        Height = 291
+        Top = 304
+        Width = 173
+        DefaultItemHeight = 18
+        TabOrder = 1
+        Items.Data = {
+          F9FFFFFF020001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+          00000015000000486973746F7269616C20646520636F6D616E646F73
+        }
+      end
+    end
+    object TScom: TTabSheet
+      Caption = 'comando'
+      ClientHeight = 595
+      ClientWidth = 351
+      object Memo1: TMemo
+        Left = 0
+        Height = 256
+        Top = 0
+        Width = 351
+        Align = alTop
+        Lines.Strings = (
+          'Memo1'
+        )
+        TabOrder = 0
+      end
+      object Memo2: TMemo
+        Left = 0
+        Height = 117
+        Top = 291
+        Width = 351
+        Lines.Strings = (
+          'Memo2'
+        )
+        TabOrder = 1
+      end
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 689
+    Height = 623
+    Top = 0
+    Width = 8
+    Align = alRight
+    ResizeAnchor = akRight
+  end
+end

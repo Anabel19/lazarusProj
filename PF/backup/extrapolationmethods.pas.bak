@@ -1,0 +1,223 @@
+unit ExtrapolationMethods;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, DataTypes, ParseMath, math;
+
+type
+  TExtrapolation = class
+
+    private
+
+      function evaluate( x: Double; fun: String): Double;
+    public
+      tmpxlist, tmpylist: TStringList;
+      constructor Create();
+      function linear(Xlist, YList: TStringList): TResult;
+      function exponential(Xlist, YList: TStringList): TResult;
+      function logarithmic(Xlist, YList: TStringList): TResult;
+      function logarithmic2(Xlist, YList: TStringList): TResult;
+  end;
+
+implementation
+
+constructor TExtrapolation.Create();
+begin
+  tmpxlist := TStringList.Create;
+  tmpylist := TStringList.Create;
+end;
+
+function TExtrapolation.linear(XList, YList: TStringList): TResult;
+var
+  numElements : Integer;
+  xAvg, yAvg : Double;
+  xDifAvg2, xDifyDif : Double;
+  i: Integer;
+  difX, difY, difYAprox, sumdifYAprox2, yAvg2: Double;
+  m, b : Double; // pendiente y bias
+  xtmp, ytmp: Double;
+  r2,r : Double;
+begin
+  Result := TResult.Create;
+  numElements:= XList.Count ;
+
+  xAvg:= 0; yAvg:= 0;
+  for i:= 0 to numElements-1 do begin
+    xAvg := xAvg + StrToFloat( XList[i] );
+    yAvg := yAvg + StrToFloat( YList[i] );
+  end;
+
+  xAvg := xAvg/numElements;
+  yAvg := yAvg/numElements;
+
+  xtmp:= 0;
+  ytmp:= 0;
+  for i:= 0 to numElements-1 do begin
+    difX := StrToFloat( XList[i] ) - xAvg;
+    difY := StrToFloat( YList[i] ) - yAvg;
+
+    xDifAvg2 := power(difX , 2);
+    xDifyDif := ( difX ) *( difY );
+
+    xtmp:= xtmp + xDifAvg2;
+    ytmp:= ytmp + xDifyDif;
+  end;
+
+  m := ytmp/xtmp;
+  b := yAvg - m*xAvg ;
+
+  sumdifYAprox2 := 0;
+  yAvg2 := 0;
+  for i:= 0 to numElements-1 do begin
+    xtmp := StrToFloat( XList[i] );
+    ytmp := xtmp*m + b;
+
+    difYAprox := ytmp - yAvg ;
+
+    sumdifYAprox2:= sumdifYAprox2 + power(difYAprox , 2);
+    yAvg2 := yAvg2 + power( StrToFloat(YList[i]) - yAvg ,2);
+  end;
+
+  r2 := sumdifYAprox2 / yAvg2;
+
+  r := sqrt(r2);
+
+  Result.r := FloatToStr( r );
+  Result.m := FloatToStr( m );
+  Result.b := FloatToStr( b );
+  Result.result:=FloatToStr( m ) +'*x + ' + FloatToStr( b );
+end;
+
+function TExtrapolation.exponential(Xlist, YList: TStringList): TResult;
+var
+  YLnList: TStringList;
+  i : Integer;
+  ResTmp : TResult;
+  a, c, tmp: String;
+begin
+  YLnList := TStringList.Create;
+  Result := TResult.Create;
+  ResTmp := TResult.Create;
+
+  for i:= 0 to YList.Count-1 do begin
+    try
+        tmp := FloatToStr( ln( StrToFloat(YList[i]) ) );
+    except
+        tmp := '0.00000000001';
+    end;
+    YLnList.Add( tmp );
+    tmpylist.Add( tmp );
+  end;
+
+  ResTmp := linear( Xlist, YLnList);
+
+  a := FloatToStr( exp( StrToFloat(ResTmp.b) ) );
+  c := ResTmp.m ;
+
+  //Result.result:= 'exp('+ResTmp.b+') * exp('+ c +')*x';
+  Result.result := a +' * exp('+ c +'*x )';
+  Result.r := ResTmp.r;
+
+end;
+
+function TExtrapolation.logarithmic(Xlist, YList: TStringList): TResult;
+var
+  YLnList: TStringList;
+  i : Integer;
+  ResTmp : TResult;
+  a, c, tmp: String;
+begin
+  YLnList := TStringList.Create;
+  Result := TResult.Create;
+  ResTmp := TResult.Create;
+
+  for i:= 0 to YList.Count-1 do begin
+    try
+        tmp := FloatToStr( ln( StrToFloat(XList[i]) ) );
+    except
+        tmp := '0.00000000001';
+    end;
+    YLnList.Add( tmp );
+  end;
+
+  ResTmp := linear( YLnList, YList);
+
+  a := ResTmp.b ;
+  c := ResTmp.m ;
+
+  Result.result := a +' + '+ c +'*ln(x)';
+  Result.r := ResTmp.r;
+end;
+
+
+function TExtrapolation.logarithmic2(Xlist, YList: TStringList): TResult;
+var
+  lnXList, lnYList: TStringList;
+  i, nElements: Integer;
+  tmp1, tmp2 : String;
+  sumLnX, sumLnY, sumLnX2, sumLnY2, sumLnXY ,ytmp, xtmp: Double;
+  b, a, r2, r: Double ;
+begin
+  Result := TResult.Create;
+  lnXList := TStringList.Create;
+  lnYList := TStringList.Create;
+
+  nElements := Xlist.Count;
+
+  sumLnX:= 0; sumLnY:= 0; sumLnX2:=0; sumLnY2 := 0; sumLnXY:=0;
+  for i:= 0 to nElements-1 do begin
+    try xtmp :=  ln( StrToFloat(Xlist[i]) );
+    except xtmp := 0.00000000001; end;
+
+    try ytmp :=  ln( StrToFloat(YList[i]) ) ;
+    except ytmp := 0.00000000001; end;
+
+    lnXList.Add( FloatToStr( xtmp ) );
+    lnYList.Add( FloatToStr( ytmp ) );
+
+    sumLnX := sumLnX + xtmp ;
+    sumLnY := sumLnY + ytmp ;
+
+    sumLnX2 := sumLnX2 + power( xtmp, 2 );
+    sumLnY2 := sumLnY2 + power( ytmp, 2);
+
+    sumLnXY := sumLnXY +(xtmp*ytmp);
+  end;
+
+  b := sumLnXY -(sumLnX*sumLnY / nElements);
+  b := b /( sumLnX2 - (power(sumLnX, 2)/nElements) );
+
+  a := (sumLnY - b*sumLnX)/ nElements;
+  a := exp(a);
+
+  r2 := b*(sumLnXY - (sumLnX*sumLnY/nElements));
+  r2 := r2 / (sumLnY2 - ( power(sumLnY, 2)/nElements ) );
+
+  r := sqrt( r2 );
+
+  Result.r := FloatToStr( r );
+  Result.r2 := FloatToStr( r2 );
+  Result.result:= FloatToStr( a ) +' + exp(x, '+ FloatToStr(b) +')';
+end;
+
+function TExtrapolation.evaluate( x: Double; fun: String): Double;
+var
+  parse: TParseMath;
+begin
+  try
+   parse := TParseMath.create();
+   parse.Expression:= fun;
+   parse.NewValue('x',x);
+   Result:=parse.Evaluate();
+  except
+    Result := 0.00001;
+    Exit;
+  end;
+end;
+
+end.
+
+

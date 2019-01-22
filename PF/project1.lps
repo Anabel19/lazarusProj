@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="25">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="12"/>
+        <CursorPos X="46" Y="3"/>
+        <UsageCount Value="213"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="231"/>
+        <CursorPos X="45" Y="327"/>
+        <FoldState Value=" T0mO+F0913151111[443[54v"/>
+        <UsageCount Value="213"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="frame_graphics.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="181"/>
+        <CursorPos Y="105"/>
+        <UsageCount Value="213"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="parsemethod.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ParseMethod"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="783"/>
+        <CursorPos X="8" Y="790"/>
+        <FoldState Value=" T3pM0b032D"/>
+        <UsageCount Value="204"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="665"/>
+        <CursorPos X="49" Y="682"/>
+        <UsageCount Value="1"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="parsemath.pas"/>
+        <UnitName Value="ParseMath"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="39"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="107"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="class_mc.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="58"/>
+        <CursorPos Y="78"/>
+        <UsageCount Value="106"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\packages\fcl-base\src\fpexprpars.pp"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="1632"/>
+        <CursorPos X="3" Y="1632"/>
+        <UsageCount Value="90"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="intersec.pas"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="23"/>
+        <CursorPos X="7" Y="62"/>
+        <UsageCount Value="102"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="class_intg.pas"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="136"/>
+        <CursorPos X="19" Y="146"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="class_edo.pas"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="82"/>
+        <CursorPos X="25" Y="100"/>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\objpas\classes\stringl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="892"/>
+        <CursorPos X="3" Y="897"/>
+        <UsageCount Value="1"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="matrix.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="31"/>
+        <CursorPos X="61" Y="42"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9272"/>
+        <CursorPos Y="9287"/>
+        <UsageCount Value="8"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\components\cmdline\ucmdbox.pas"/>
+        <UnitName Value="uCmdBox"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2033"/>
+        <CursorPos X="3" Y="1947"/>
+        <UsageCount Value="9"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="class_extra.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="6"/>
+        <CursorPos X="110" Y="47"/>
+        <UsageCount Value="84"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="47" Y="63"/>
+        <UsageCount Value="6"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\objpas\sysutils\syssr.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="5"/>
+        <UsageCount Value="6"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="class_intra.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="89"/>
+        <CursorPos X="46" Y="108"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\lazarus\components\tachart\tacustomseries.pas"/>
+        <UnitName Value="TACustomSeries"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="23" Y="19"/>
+        <UsageCount Value="11"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\components\tachart\tachartutils.pas"/>
+        <UnitName Value="TAChartUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="3" Y="34"/>
+        <UsageCount Value="11"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="264"/>
+        <CursorPos X="37" Y="299"/>
+        <UsageCount Value="11"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\lazarus\lcl\graphtype.pp"/>
+        <UnitName Value="GraphType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos X="3" Y="33"/>
+        <UsageCount Value="11"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\components\tachart\tadrawutils.pas"/>
+        <UnitName Value="TADrawUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="55"/>
+        <UsageCount Value="11"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="extrapolationmethods.pas"/>
+        <UnitName Value="ExtrapolationMethods"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="17" Y="11"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit24>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="360" Column="58" TopLine="342"/>
+      </Position1>
+      <Position2>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="359" Column="57" TopLine="343"/>
+      </Position2>
+      <Position3>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="362" Column="17" TopLine="342"/>
+      </Position3>
+      <Position4>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="361" Column="51" TopLine="343"/>
+      </Position4>
+      <Position5>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="360" Column="20" TopLine="343"/>
+      </Position5>
+      <Position6>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="429" Column="102" TopLine="423"/>
+      </Position6>
+      <Position7>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="444" Column="40" TopLine="423"/>
+      </Position7>
+      <Position8>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="441" Column="18" TopLine="430"/>
+      </Position8>
+      <Position9>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="445" Column="44" TopLine="426"/>
+      </Position9>
+      <Position10>
+        <Filename Value="frame_graphics.pas"/>
+        <Caret Line="229" Column="41" TopLine="194"/>
+      </Position10>
+      <Position11>
+        <Filename Value="frame_graphics.pas"/>
+        <Caret Line="208" Column="30" TopLine="198"/>
+      </Position11>
+      <Position12>
+        <Filename Value="frame_graphics.pas"/>
+        <Caret Line="219" Column="37" TopLine="199"/>
+      </Position12>
+      <Position13>
+        <Filename Value="main.pas"/>
+        <Caret Line="304" Column="41" TopLine="262"/>
+      </Position13>
+      <Position14>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="677" Column="48" TopLine="466"/>
+      </Position14>
+      <Position15>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="9" Column="38"/>
+      </Position15>
+      <Position16>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="472" Column="15" TopLine="454"/>
+      </Position16>
+      <Position17>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="470" Column="17" TopLine="449"/>
+      </Position17>
+      <Position18>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="473" Column="17" TopLine="465"/>
+      </Position18>
+      <Position19>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="472" Column="21" TopLine="453"/>
+      </Position19>
+      <Position20>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="476" Column="22" TopLine="458"/>
+      </Position20>
+      <Position21>
+        <Filename Value="main.pas"/>
+        <Caret Line="414" Column="59" TopLine="401"/>
+      </Position21>
+      <Position22>
+        <Filename Value="main.pas"/>
+        <Caret Line="218" Column="66" TopLine="209"/>
+      </Position22>
+      <Position23>
+        <Filename Value="main.pas"/>
+        <Caret Line="212" Column="66" TopLine="201"/>
+      </Position23>
+      <Position24>
+        <Filename Value="extrapolationmethods.pas"/>
+        <Caret Line="49" Column="34" TopLine="30"/>
+      </Position24>
+      <Position25>
+        <Filename Value="extrapolationmethods.pas"/>
+        <Caret Line="91" Column="6" TopLine="75"/>
+      </Position25>
+      <Position26>
+        <Filename Value="extrapolationmethods.pas"/>
+        <Caret Line="44" Column="3" TopLine="15"/>
+      </Position26>
+      <Position27>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="491" Column="15" TopLine="477"/>
+      </Position27>
+      <Position28>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="756" Column="46" TopLine="735"/>
+      </Position28>
+      <Position29>
+        <Filename Value="main.pas"/>
+        <Caret Line="432" Column="66" TopLine="407"/>
+      </Position29>
+      <Position30>
+        <Filename Value="parsemethod.pas"/>
+        <Caret Line="790" Column="8" TopLine="783"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

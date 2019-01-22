@@ -1,0 +1,162 @@
+object Form1: TForm1
+  Left = 12
+  Height = 603
+  Top = 75
+  Width = 917
+  AlphaBlend = True
+  Caption = 'Form1'
+  ClientHeight = 603
+  ClientWidth = 917
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 603
+    Top = 0
+    Width = 328
+    Align = alLeft
+    ClientHeight = 603
+    ClientWidth = 328
+    TabOrder = 0
+    object Button1: TButton
+      Left = 240
+      Height = 25
+      Top = 96
+      Width = 75
+      Caption = 'Execute'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 15
+      Top = 56
+      Width = 88
+      Caption = 'Nombre Archivo'
+      ParentColor = False
+    end
+    object Memo1: TMemo
+      Left = 16
+      Height = 80
+      Top = 264
+      Width = 288
+      Lines.Strings = (
+        'Memo1'
+      )
+      TabOrder = 1
+    end
+    object Label2: TLabel
+      Left = 24
+      Height = 15
+      Top = 232
+      Width = 43
+      Caption = 'Funcion'
+      ParentColor = False
+    end
+    object num: TEdit
+      Left = 80
+      Height = 23
+      Top = 120
+      Width = 63
+      TabOrder = 2
+    end
+    object Label4: TLabel
+      Left = 32
+      Height = 15
+      Top = 128
+      Width = 31
+      Caption = 'num: '
+      ParentColor = False
+    end
+  end
+  object Edit1: TEdit
+    Left = 112
+    Height = 23
+    Top = 56
+    Width = 200
+    TabOrder = 1
+    Text = 'ejemplo.txt'
+  end
+  object gf: TComboBox
+    Left = 24
+    Height = 23
+    Top = 392
+    Width = 283
+    ItemHeight = 15
+    TabOrder = 2
+  end
+  object Chart1: TChart
+    Left = 344
+    Height = 568
+    Top = 24
+    Width = 560
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object EJEX: TConstantLine
+      Position = 0
+    end
+    object EJEY: TConstantLine
+      LineStyle = lsVertical
+      Position = 0
+    end
+    object Plotear: TLineSeries
+      Active = False
+      LinePen.Color = clBlue
+      LinePen.Cosmetic = False
+      LinePen.Style = psClear
+      Pointer.Brush.Color = clHighlight
+      Pointer.Brush.Style = bsPattern
+      Pointer.HorizSize = 5
+      Pointer.Pen.Color = clMenuHighlight
+      Pointer.Style = psCircle
+      Pointer.VertSize = 5
+    end
+  end
+  object Graficar: TButton
+    Left = 24
+    Height = 30
+    Top = 424
+    Width = 97
+    Caption = 'GRAFICA'
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 400
+    Width = 34
+    Caption = 'value: '
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 88
+    Height = 23
+    Top = 480
+    Width = 88
+    TabOrder = 5
+  end
+  object Memo4: TMemo
+    Left = 24
+    Height = 44
+    Top = 520
+    Width = 283
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 6
+  end
+end
