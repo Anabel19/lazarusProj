@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, FileUtil, uCmdBox, TAGraph, Forms, Controls, Graphics,
   Dialogs, Menus, ExtCtrls, Buttons, StdCtrls, ValEdit, ComCtrls, DbCtrls,
-  Grids, //ParseMath,
+  Grids, ParseMath,
   frame_graphics, parsemethod, intersec;
 
 type
@@ -37,7 +37,7 @@ type
     MAT1,
     MAT2: string;
     condicion: Integer;
-    //Parse: TParseMath;
+    Parse: TParseMath;
     ParseMeth: TPMeth;
     nf,
     ListVar: TStringList;
@@ -280,10 +280,10 @@ begin
                  end;
                  Execute(Input);
                  vx:= ParseMeth.varx;         h:=(ParseMeth.hedo);
-                          CmdBox.Writeln(LineEnding+'|'+'    n    '              +'|'+'     Xi        '               +'|'+'       f(Xi)      '                 +'|'+'     RealValue      '               +'|' +LineEnding);
+                          //CmdBox.Writeln(LineEnding+'|'+'    n    '              +'|'+'     Xi        '               +'|'+'       f(Xi)      '                 +'|'+'     RealValue      '               +'|' +LineEnding);
                     for i:=0 to ParseMeth.Lfunxedo.Count-1 do begin
-                          CmdBox.Writeln(LineEnding+'|'+'    '+IntToStr(i)+'    '+'|'+'        '+FloatToStr(vx)+'    '+'|'+'     '+ParseMeth.Lfunxedo[i]+'     '+'|'+'      '+ParseMeth.Lsolxedo[i]+'    '+'|' +LineEnding);
-                          //CmdBox.Write('('+FloatToStr(vx)+','+ParseMeth.Lfunxedo[i]+')');
+                          //CmdBox.Writeln(LineEnding+'|'+'    '+IntToStr(i)+'    '+'|'+'        '+FloatToStr(vx)+'    '+'|'+'     '+ParseMeth.Lfunxedo[i]+'     '+'|'+'      '+ParseMeth.Lsolxedo[i]+'    '+'|' +LineEnding);
+                          CmdBox.Write('('+FloatToStr(vx)+','+ParseMeth.Lfunxedo[i]+')');
                           p.Add(FloatToStr(vx));
                           p.Add(ParseMeth.Lfunxedo[i]);
                           vx:= vx + h;

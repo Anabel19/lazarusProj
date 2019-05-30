@@ -1,20 +1,20 @@
 object Frame1: TFrame1
   Left = 0
-  Height = 419
+  Height = 333
   Top = 0
   Width = 758
-  ClientHeight = 419
+  ClientHeight = 333
   ClientWidth = 758
   TabOrder = 0
-  DesignLeft = 363
-  DesignTop = 197
+  DesignLeft = 2
+  DesignTop = 284
   object Panel1: TPanel
     Left = 556
-    Height = 419
+    Height = 333
     Top = 0
     Width = 202
     Align = alRight
-    ClientHeight = 419
+    ClientHeight = 333
     ClientWidth = 202
     TabOrder = 0
     object ediMin: TEdit
@@ -75,9 +75,9 @@ object Frame1: TFrame1
       Text = '0.1'
     end
     object TrackBar1: TTrackBar
-      Left = 56
+      Left = 60
       Height = 25
-      Top = 152
+      Top = 160
       Width = 100
       Max = 4
       Min = 1
@@ -87,7 +87,7 @@ object Frame1: TFrame1
     object trbarVisible: TTrackBar
       Left = 1
       Height = 25
-      Top = 393
+      Top = 307
       Width = 200
       Max = 255
       Min = 200
@@ -98,14 +98,14 @@ object Frame1: TFrame1
     object StatusBar1: TStatusBar
       Left = 1
       Height = 23
-      Top = 370
+      Top = 284
       Width = 200
       Panels = <>
     end
   end
   object Chart1: TChart
     Left = 0
-    Height = 419
+    Height = 333
     Top = 0
     Width = 556
     AxisList = <    

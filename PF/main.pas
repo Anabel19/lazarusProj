@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, FileUtil, uCmdBox, TAGraph, Forms, Controls, Graphics,
   Dialogs, Menus, ExtCtrls, Buttons, StdCtrls, ValEdit, ComCtrls, DbCtrls,
-  Grids, //ParseMath,
+  Grids, ParseMath,
   frame_graphics, parsemethod, intersec;
 
 type
@@ -37,7 +37,7 @@ type
     MAT1,
     MAT2: string;
     condicion: Integer;
-    //Parse: TParseMath;
+    Parse: TParseMath;
     ParseMeth: TPMeth;
     nf,
     ListVar: TStringList;

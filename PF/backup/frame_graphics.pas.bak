@@ -86,13 +86,7 @@ begin
   Parse.AddVariable('x',0);
   FunctionList:= TList.Create;
   funtion:=funciones;
- {FunctionList.Add( TLineSeries.Create( Chart1 ) ); //aqui creamos un LineSeries
-   with TLineSeries( FunctionList[ FunctionList.Count - 1 ] ) do begin //Are este lineSeries tiene nombre una etiqueta
-        Name:= FunctionSeriesName + IntToStr( FunctionList.Count );
-        Tag:= EditList.Count - 1; // Edit Asossiated  //etiqueta con elnumero de tag que es
 
-   end;
-   Chart1.AddSeries( TLineSeries( FunctionList[ FunctionList.Count - 1 ] ) ); }
    for i:=0 to funciones.Count-1 do begin
         ActiveFunction:=i;
         crearLineSeries();
@@ -108,18 +102,7 @@ begin
   Result:= Parse.Evaluate();
 
 end;
-{
-function TFrame1.f( x: Real ): Real;
-begin
-  //func:= TEdit( EditList[ ActiveFunction ] ).Text;
-  Parse.Expression:= funtion[ActiveFunction];
-  for i:=0 to vari;
-      Parse.NewValue(VX[i], vari[i]);
-  //Parse.NewValue('x', x);
-  Result:= Parse.Evaluate();
 
-end;
- }
 procedure TFrame1.Graficar2D();
 var
   x,y:Real;
